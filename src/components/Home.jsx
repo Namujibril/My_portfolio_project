@@ -2,9 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <main>
-        
-    </main>
+    <section>Home Section</section>
   )
 }
 

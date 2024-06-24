@@ -2,9 +2,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <main>
-        
-    </main>
+    <section>Skills Section</section>
   )
 }
 
