@@ -1,19 +1,23 @@
-import React from 'react'
+import { useContext, useEffect } from 'react'
 import Navbar from './components/Navbar'
+import { DarkModeContext } from './components/DarkModeContext'
 import Home from './components/Home'
-import Project from './components/Project'
+import About from './components/About'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
-
 const App = () => {
+  const { darkMode, setDarkMode } = useContext(DarkModeContext)
   return (
-    
-    <main className='bg-primryColor'>
-      <Navbar/>
-      {/* <Home/>
-      <Project/>
-      <Skills/>
-      <Footer/> */}
+    <main className={`${darkMode && 'dark'}  pt-18`}>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   )
 }

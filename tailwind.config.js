@@ -1,46 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "selector",
   theme: {
     screens: {
-      'sm': '576px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1320px',
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
     },
     container: {
       center: true,
-      padding:{
-        DEFAULT: '2rem',
-      }
+      padding: {
+        DEFAULT: "2rem",
+      },
     },
-    colors: {
-      primryColor:'#ddfcfd',
-      backgroundColor:'#011d1e',
-      secondaryColor:'#6eecf7'
+
+    extend: {
+      colors: {
+        "text-color": "#e2f0e3",
+        "background-color": "#071308",
+        "primary-color": "#8FE195",
+        "secondary-color": "#188C22",
+        "accent-color": "#16E927",
+      },
+      fontFamily: {
+        Poppins: "Poppins",
+      },
     },
-    fontSize: {
-      sm: '0.750rem',
-      base: '1rem',
-      xl: '1.333rem',
-      '2xl': '1.777rem',
-      '3xl': '2.369rem',
-      '4xl': '3.158rem',
-      '5xl': '4.210rem',
-    },
-    fontFamily: {
-      heading: 'El Messiri',
-      body: 'El Messiri',
-    },
-    fontWeight: {
-      normal: '400',
-      bold: '700',
-    },
-    extend: {},
   },
   plugins: [],
-}
+};
